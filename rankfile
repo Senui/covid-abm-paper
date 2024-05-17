@@ -1,0 +1,5 @@
+rank 0=localhost slot=0-8
+rank 1=src-bdm slot=0-4
+rank 2=src-bdm  slot=5-8
+rank 3=src-bdm  slot=9-12
+rank 4=src-bdm  slot=13-16

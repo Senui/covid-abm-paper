@@ -1,0 +1,36 @@
+{
+  "bdm::SimParam": {
+    "population_size": 50000,
+    "custom_agent_to_person_ratio": 1,
+    "export_affected": true,
+    "no_fixed_seed": true,
+    "custom_agent_to_person_ratio": 0,
+    "export_affected": false,
+    "export_infected_per_timestep_frequency": 0,
+    "repeat": 1,
+    "beta1" : 0.1876,
+    "beta2" : 0.0093,
+    "beta3" : 0.3533,
+    "beta4" : 0.2380,
+    "hospital_average_mean" : 2,
+    "initial_infection_scaling": 2,
+    "initial_exposed_infected_ratio": 1,
+    "mode": "nsim-and-analytical"
+  },
+  "bdm::Param": {
+    "simulation_time_step": 1,
+    "remove_output_dir_contents": false,
+    "statistics": false
+  },
+  "bdm::OptimizationParam": {
+    "algorithm" : "ParameterSweep",
+    "repetition" : 1,
+    "params" : [
+      {
+        "_typename": "bdm::SetParam",
+        "param_name" : "bdm::SimParam::population_size",
+        "values" : [1718108]
+      }
+    ]
+  }
+}
